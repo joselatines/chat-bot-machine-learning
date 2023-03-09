@@ -1,0 +1,98 @@
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": [
+				"Hi there",
+				"How are you",
+				"Is anyone there?",
+				"Hey",
+				"Hola",
+				"Hello",
+				"Good day"
+			],
+			"responses": [
+				"Hello",
+				"Good to see you again",
+				"Hi there, how can I help?"
+			],
+			"context": [""]
+		},
+		{
+			"tag": "goodbye",
+			"patterns": [
+				"Bye",
+				"See you later",
+				"Goodbye",
+				"Nice chatting to you, bye",
+				"Till next time"
+			],
+			"responses": [
+				"See you!",
+				"Have a nice day",
+				"Bye! Come back again soon."
+			],
+			"context": [""]
+		},
+		{
+			"tag": "thanks",
+			"patterns": [
+				"Thanks",
+				"Thank you",
+				"That's helpful",
+				"Awesome, thanks",
+				"Thanks for helping me"
+			],
+			"responses": ["My pleasure", "You're Welcome"],
+			"context": [""]
+		},
+		{
+			"tag": "query",
+			"patterns": ["What is big bang?"],
+			"responses": [
+				"The Big Bang theory is the prevailing cosmological model explaining the existence of the observable universe from the earliest known periods through its subsequent large-scale evolution."
+			],
+			"context": [""]
+		},
+		{
+			"tag": "query",
+			"patterns": [
+				"What is the contract?",
+				"how i can buy in the contract",
+				"in which network is the token"
+			],
+			"responses": [
+				"the current contract is xxxxxxxxxx",
+				"You can see the contract here xxxxxxx"
+			],
+			"context": [""]
+		},
+		{
+			"tag": "query",
+			"patterns": ["What are NFTs and how do they work?", "what a re nfts"],
+			"responses": [
+				"NFTs are unique digital assets that use blockchain technology to certify their ownership and authenticity."
+			],
+			"context": [""]
+		},
+		{
+			"tag": "query",
+			"patterns": ["What makes an NFT valuable?", "How are NFTs valued?"],
+			"responses": [
+				"The value of an NFT is determined by factors such as its rarity, the artist or creator behind it, and its perceived cultural or historical significance."
+			],
+			"context": [""]
+		},
+		{
+			"tag": "query",
+			"patterns": [
+				"How do I create an NFT?",
+				"What do I need to create an NFT?"
+			],
+			"responses": [
+				"To create an NFT, you typically need to use a platform that supports NFTs, such as OpenSea, and upload your digital artwork or content."
+			],
+			"context": [""]
+		}
+	]
+}
