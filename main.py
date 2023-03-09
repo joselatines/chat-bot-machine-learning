@@ -1,5 +1,6 @@
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
+from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import tflearn
 import tensorflow as tf
@@ -94,7 +95,6 @@ def bag_of_words(s, words):
 
     return np.array(bag)
 
-
 def chat():
     print("The bot is ready to talk!!(Type 'quit' to exit)")
     while True:
@@ -109,12 +109,11 @@ def chat():
         results_index = np.argmax(results)
 
         tag = labels[results_index]
-
         for tg in data["intents"]:
 
             if tg["tag"] == tag:
                 responses = tg["responses"]
-                print("responses: ", responses)
+                print('responses: ', responses)
 
         print("Bot:" + random.choice(responses))
 
